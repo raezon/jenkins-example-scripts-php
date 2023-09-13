@@ -10,6 +10,11 @@ pipeline {
       steps {
         sh 'php hello.php'
       }
+      post {
+        success {
+          archiveArtifacts artifacts: 'hello.php', allowEmptyArchive: true
+        }
+      }
     }
   }
 }
