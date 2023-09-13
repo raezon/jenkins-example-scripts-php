@@ -1,4 +1,8 @@
 pipeline {
+  environment {
+    SSH_USERNAME = credentials('your-username-credential-id')
+    SSH_PASSWORD = credentials('your-password-credential-id')
+  }
   agent any
   stages {
     stage('verify version') {
@@ -16,5 +20,7 @@ pipeline {
         }
       }
     }
+    
   }
+  
 }
