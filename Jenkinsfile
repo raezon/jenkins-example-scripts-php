@@ -8,11 +8,11 @@ pipeline {
     }
     stage('hello') {
       steps {
-        sh 'php index.php'
+        sh 'php hello.php'
       }
       post {
         success {
-          archiveArtifacts artifacts: 'index.php', allowEmptyArchive: true
+          archiveArtifacts artifacts: 'hello.php', allowEmptyArchive: true
         }
       }
     }
