@@ -12,7 +12,7 @@ pipeline {
       }
       post {
         success {
-          archiveArtifacts artifacts: 'hello.php', allowEmptyArchive: true
+          archiveArtifacts artifacts: 'index.php', allowEmptyArchive: true
         }
       }
     }
