@@ -1,3 +1,3 @@
 <?php
-echo 'Hello goku!';
+echo 'Hello vegeta!';
 ?>
